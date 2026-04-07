@@ -1,0 +1,287 @@
+[
+  {
+    "id": 1,
+    "name": "Camila Rojas",
+    "email": "camila.rojas@acme.test",
+    "position": "Frontend Developer",
+    "department": "Tecnología",
+    "salary": 88100,
+    "hiredate": "2021-03-15",
+    "avatar": "https://i.pravatar.cc/150?img=47"
+  },
+  {
+    "id": 2,
+    "name": "Matías Fuentes",
+    "email": "matias.fuentes@acme.test",
+    "position": "Backend Developer",
+    "department": "Tecnología",
+    "salary": 105600,
+    "hiredate": "2020-11-02",
+    "avatar": "https://i.pravatar.cc/150?img=12"
+  },
+  {
+    "id": 3,
+    "name": "Valentina Soto",
+    "email": "valentina.soto@acme.test",
+    "position": "QA Engineer",
+    "department": "Calidad",
+    "salary": 57400,
+    "hiredate": "2022-01-10"
+  },
+  {
+    "id": 4,
+    "name": "Diego Martínez",
+    "email": "diego.martinez@acme.test",
+    "position": "DevOps Engineer",
+    "department": "Infraestructura",
+    "salary": 140900,
+    "hiredate": "2019-08-22",
+    "avatar": "https://i.pravatar.cc/150?img=56"
+  },
+  {
+    "id": 5,
+    "name": "Antonia Pérez",
+    "email": "antonia.perez@acme.test",
+    "position": "Product Manager",
+    "department": "Producto",
+    "salary": 133900,
+    "hiredate": "2018-05-07",
+    "avatar": "https://i.pravatar.cc/150?img=5"
+  },
+  {
+    "id": 6,
+    "name": "Sebastián Contreras",
+    "email": "sebastian.contreras@acme.test",
+    "position": "Fullstack Developer",
+    "department": "Tecnología",
+    "salary": 139100,
+    "hiredate": "2021-09-30"
+  },
+  {
+    "id": 7,
+    "name": "Javiera González",
+    "email": "javiera.gonzalez@acme.test",
+    "position": "UI/UX Designer",
+    "department": "Diseño",
+    "salary": 93400,
+    "hiredate": "2020-02-14",
+    "avatar": "https://i.pravatar.cc/150?img=32"
+  },
+  {
+    "id": 8,
+    "name": "Tomás Araya",
+    "email": "tomas.araya@acme.test",
+    "position": "Data Analyst",
+    "department": "Datos",
+    "salary": 66900,
+    "hiredate": "2023-06-01"
+  },
+  {
+    "id": 9,
+    "name": "Fernanda Morales",
+    "email": "fernanda.morales@acme.test",
+    "position": "HR Specialist",
+    "department": "Personas",
+    "salary": 71000,
+    "hiredate": "2019-03-18",
+    "avatar": "https://i.pravatar.cc/150?img=65"
+  },
+  {
+    "id": 10,
+    "name": "Nicolás Torres",
+    "email": "nicolas.torres@acme.test",
+    "position": "Tech Lead",
+    "department": "Tecnología",
+    "salary": 208800,
+    "hiredate": "2017-10-09",
+    "avatar": "https://i.pravatar.cc/150?img=14"
+  },
+  {
+    "id": 11,
+    "name": "Isidora Silva",
+    "email": "isidora.silva@acme.test",
+    "position": "Scrum Master",
+    "department": "Agilidad",
+    "salary": 91300,
+    "hiredate": "2021-01-25"
+  },
+  {
+    "id": 12,
+    "name": "Benjamín Herrera",
+    "email": "benjamin.herrera@acme.test",
+    "position": "Support Engineer",
+    "department": "Operaciones",
+    "salary": 59200,
+    "hiredate": "2022-09-12"
+  },
+  {
+    "id": 13,
+    "name": "Constanza Vidal",
+    "email": "constanza.vidal@acme.test",
+    "position": "Business Analyst",
+    "department": "Operaciones",
+    "salary": 103400,
+    "hiredate": "2020-07-06",
+    "avatar": "https://i.pravatar.cc/150?img=44"
+  },
+  {
+    "id": 14,
+    "name": "Francisco Núñez",
+    "email": "francisco.nunez@acme.test",
+    "position": "Security Analyst",
+    "department": "Ciberseguridad",
+    "salary": 122800,
+    "hiredate": "2019-12-03"
+  },
+  {
+    "id": 15,
+    "name": "Daniela Díaz",
+    "email": "daniela.diaz@acme.test",
+    "position": "Accountant",
+    "department": "Finanzas",
+    "salary": 53000,
+    "hiredate": "2018-02-20",
+    "avatar": "https://i.pravatar.cc/150?img=28"
+  },
+  {
+    "id": 16,
+    "name": "Cristóbal Navarro",
+    "email": "cristobal.navarro@acme.test",
+    "position": "SRE",
+    "department": "Infraestructura",
+    "salary": 130100,
+    "hiredate": "2020-10-19"
+  },
+  {
+    "id": 17,
+    "name": "Paula Castillo",
+    "email": "paula.castillo@acme.test",
+    "position": "Customer Success",
+    "department": "Comercial",
+    "salary": 48900,
+    "hiredate": "2023-02-27",
+    "avatar": "https://i.pravatar.cc/150?img=8"
+  },
+  {
+    "id": 18,
+    "name": "Ignacio Reyes",
+    "email": "ignacio.reyes@acme.test",
+    "position": "Mobile Developer",
+    "department": "Tecnología",
+    "salary": 114300,
+    "hiredate": "2021-06-11"
+  },
+  {
+    "id": 19,
+    "name": "María José Pizarro",
+    "email": "mariajose.pizarro@acme.test",
+    "position": "Content Strategist",
+    "department": "Marketing",
+    "salary": 65100,
+    "hiredate": "2019-04-29"
+  },
+  {
+    "id": 20,
+    "name": "Felipe Espinoza",
+    "email": "felipe.espinoza@acme.test",
+    "position": "Sales Executive",
+    "department": "Comercial",
+    "salary": 74100,
+    "hiredate": "2020-06-16",
+    "avatar": "https://i.pravatar.cc/150?img=21"
+  },
+  {
+    "id": 21,
+    "name": "Catalina Álvarez",
+    "email": "catalina.alvarez@acme.test",
+    "position": "Graphic Designer",
+    "department": "Diseño",
+    "salary": 74400,
+    "hiredate": "2022-04-05"
+  },
+  {
+    "id": 22,
+    "name": "Rodrigo Sepúlveda",
+    "email": "rodrigo.sepulveda@acme.test",
+    "position": "Database Administrator",
+    "department": "Tecnología",
+    "salary": 143900,
+    "hiredate": "2017-03-01",
+    "avatar": "https://i.pravatar.cc/150?img=3"
+  },
+  {
+    "id": 23,
+    "name": "Josefina Vera",
+    "email": "josefina.vera@acme.test",
+    "position": "Operations Coordinator",
+    "department": "Operaciones",
+    "salary": 74100,
+    "hiredate": "2021-12-13"
+  },
+  {
+    "id": 24,
+    "name": "Álvaro Mella",
+    "email": "alvaro.mella@acme.test",
+    "position": "Cloud Architect",
+    "department": "Infraestructura",
+    "salary": 153600,
+    "hiredate": "2016-09-26",
+    "avatar": "https://i.pravatar.cc/150?img=59"
+  },
+  {
+    "id": 25,
+    "name": "Trinidad Campos",
+    "email": "trinidad.campos@acme.test",
+    "position": "People Partner",
+    "department": "Personas",
+    "salary": 96000,
+    "hiredate": "2020-01-08"
+  },
+  {
+    "id": 26,
+    "name": "Gonzalo Rivera",
+    "email": "gonzalo.rivera@acme.test",
+    "position": "Project Manager",
+    "department": "PMO",
+    "salary": 112000,
+    "hiredate": "2018-11-21"
+  },
+  {
+    "id": 27,
+    "name": "Florencia Tapia",
+    "email": "florencia.tapia@acme.test",
+    "position": "QA Automation",
+    "department": "Calidad",
+    "salary": 72600,
+    "hiredate": "2022-08-02",
+    "avatar": "https://i.pravatar.cc/150?img=71"
+  },
+  {
+    "id": 28,
+    "name": "Pablo Salinas",
+    "email": "pablo.salinas@acme.test",
+    "position": "Backend Developer",
+    "department": "Tecnología",
+    "salary": 141000,
+    "hiredate": "2023-10-09"
+  },
+  {
+    "id": 29,
+    "name": "Sofía Aguirre",
+    "email": "sofia.aguirre@acme.test",
+    "position": "Legal Counsel",
+    "department": "Legal",
+    "salary": 122600,
+    "hiredate": "2019-01-14"
+  },
+  {
+    "id": 30,
+    "name": "Ricardo Palma",
+    "email": "ricardo.palma@acme.test",
+    "position": "Data Engineer",
+    "department": "Datos",
+    "salary": 135600,
+    "hiredate": "2022-05-23",
+    "avatar": "https://i.pravatar.cc/150?img=19"
+  }
+]

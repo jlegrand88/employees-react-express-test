@@ -1,0 +1,50 @@
+# --- DEPENDENCIAS (Monorepo Hoisting) ---
+/node_modules
+node_modules/
+**/node_modules/
+package-lock.json
+npm-debug.log*
+
+# --- NEXT.JS (Frontend) ---
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.env*.local
+frontend/typescript-env.d.ts
+
+# --- EXPRESS / NODE (Backend) ---
+backend/.env
+backend/logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- TESTING & QUALITY ---
+.husky/_/
+.husky/pre-commit
+coverage/
+frontend/test-results/
+frontend/playwright-report/
+frontend/blob-report/
+frontend/playwright/.cache/
+
+# --- IDE & SYSTEM ---
+.vscode/
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# --- BUILD ARTIFACTS ---
+dist/
+build/
+
+.env
+.env.local
+.env.development
+.env.test
+.env.production
