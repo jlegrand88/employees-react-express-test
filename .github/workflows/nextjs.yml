@@ -17,10 +17,13 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    # Quitamos el 'defaults' para que los comandos corran desde la raíz por defecto
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Debug - List Files
+        # Esto nos dirá exactamente qué ve GitHub en la raíz
+        run: ls -R
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -33,17 +36,16 @@ jobs:
           static_site_generator: next
 
       - name: Install dependencies
-        # Ahora sí encontrará el package-lock.json en la raíz
+        # Forzamos la ejecución en la raíz del runner ($GITHUB_WORKSPACE)
         run: npm ci
+        working-directory: .
 
       - name: Build with Next.js
-        # Ejecutamos el build específicamente para el workspace del frontend
         run: npm run build --workspace=frontend
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # La carpeta 'out' se genera dentro de frontend, así que apuntamos ahí
           path: frontend/out
 
   deploy:
