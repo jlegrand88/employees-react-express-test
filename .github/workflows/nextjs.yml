@@ -17,10 +17,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        # Esto le dice a GitHub que todos los comandos 'run' se ejecuten dentro de /frontend
-        working-directory: ./frontend
+    # Quitamos el 'defaults' para que los comandos corran desde la raíz por defecto
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -36,17 +33,18 @@ jobs:
           static_site_generator: next
 
       - name: Install dependencies
+        # Ahora sí encontrará el package-lock.json en la raíz
         run: npm ci
 
       - name: Build with Next.js
-        # Importante: Next.js debe estar configurado para salida estática (output: 'export')
+        # Ejecutamos el build específicamente para el workspace del frontend
         run: npm run build --workspace=frontend
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Next.js con 'output: export' genera la carpeta 'out'
-          path: ./frontend/out
+          # La carpeta 'out' se genera dentro de frontend, así que apuntamos ahí
+          path: frontend/out
 
   deploy:
     environment:
