@@ -30,7 +30,7 @@ export const useEmployeeStore = create<EmployeeState>((set) => ({
   fetchEmployees: async () => {
     set({ loading: true, error: null });
     try {
-      const res = await fetch('http://localhost:3001/api/employees');
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/employees`);
       if (!res.ok) throw new Error('Error al conectar con el servidor');
       const data = await res.json();
       set({ employees: data, loading: false });
@@ -42,7 +42,7 @@ export const useEmployeeStore = create<EmployeeState>((set) => ({
   fetchEmployeeById: async (id: number) => {
     set({ loading: true });
     try {
-      const res = await fetch(`http://localhost:3001/api/employees/${id}`);
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/employees/${id}`);
       const data = await res.json();
       set({ selectedEmployee: data, loading: false });
     } catch (err) {

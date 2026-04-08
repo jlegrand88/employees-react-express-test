@@ -9,7 +9,7 @@
     "dev:front": "npm run dev --workspace=frontend",
     "dev:back": "npm run dev --workspace=backend",
     "test:all": "npm run test --workspaces",
-    "prepare": "husky"
+    "prepare": "if [ \"$NODE_ENV\" != \"production\" ]; then husky; fi"
   },
   "devDependencies": {
     "husky": "^9.0.0",
