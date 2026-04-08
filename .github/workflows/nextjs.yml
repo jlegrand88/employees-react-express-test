@@ -40,7 +40,7 @@ jobs:
 
       - name: Build with Next.js
         # Importante: Next.js debe estar configurado para salida estática (output: 'export')
-        run: npx next build
+        run: npm run build --workspace=frontend
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
