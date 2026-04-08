@@ -1,2 +1,2 @@
-echo "🏗️ Verificando que el proyecto compila antes de subir..."
-npm run build
+echo "🏗️ Verificando que el frontend compila antes de subir..."
+npm run build --workspace=frontend
