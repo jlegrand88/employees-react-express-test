@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Providers } from "@/components/ThemeProvider";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,15 +21,51 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="es" suppressHydrationWarning>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
+      >
+        <Providers>
+          <nav className="sticky top-0 z-50 w-full border-b border-zinc-200/50 dark:border-zinc-800/50 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-xl transition-all duration-300">
+            <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                {/* Logo con un gradiente más vibrante y sombra sutil */}
+                <div className="relative group">
+                  <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-300"></div>
+                  <div className="relative w-9 h-9 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center shadow-lg shadow-blue-500/20 border border-blue-400/20">
+                    <span className="text-white font-black text-[10px] tracking-tighter">
+                      GE
+                    </span>
+                  </div>
+                </div>
+
+                {/* Tipografía con mejor peso y tracking */}
+                <span className="font-extrabold text-zinc-900 dark:text-white tracking-tight text-lg">
+                  Gestión de{" "}
+                  <span className="text-blue-600 dark:text-blue-400">
+                    Empleados
+                  </span>
+                </span>
+              </div>
+
+              <div className="flex items-center gap-4">
+                {/* El Toggle ahora en un contenedor con hover sutil */}
+                <div className="p-1.5 rounded-full hover:bg-zinc-100 dark:hover:bg-zinc-800/50 transition-colors">
+                  <ThemeToggle />
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <main id="main-content" className="flex-1">
+            {children}
+          </main>
+        </Providers>
+      </body>
     </html>
   );
 }
