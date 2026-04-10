@@ -12,6 +12,7 @@ import {
   Alert,
   Skeleton,
 } from "antd";
+import type { ColumnsType } from "antd/es/table";
 import {
   UserOutlined,
   MailOutlined,
@@ -20,6 +21,7 @@ import {
 } from "@ant-design/icons";
 import { useEmployeeStore } from "@/store/useEmployeeStore";
 import { useTheme } from "next-themes";
+import { Employee } from "@/types/emlpoyee";
 
 const { Title, Text } = Typography;
 
@@ -50,7 +52,7 @@ export default function Home() {
     clearSelected();
   };
 
-  const columns = [
+  const columns: ColumnsType<Employee> = [
     {
       title: "Nombre",
       dataIndex: "name",
