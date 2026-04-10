@@ -37,7 +37,14 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 // Wrapper principal
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
-    <NextThemesProvider attribute="class" defaultTheme="system" enableSystem>
+    // @ts-expect-error - next-themes v0.4+ tiene un mismatch de tipos con React 19 en children
+    <NextThemesProvider
+      attribute="class"
+      defaultTheme="system"
+      enableSystem
+      storageKey="theme"
+      themes={["light", "dark"]}
+    >
       <ThemeProvider>{children}</ThemeProvider>
     </NextThemesProvider>
   );
